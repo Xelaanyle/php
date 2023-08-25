@@ -10,9 +10,17 @@ use App\Combat\Combat;
 // La classe Vampire est composé de la classe Personnage
 use App\Personnage\Vampire;
 
+use App\Decor\Arbre;
+
 use App\Personnage\Personnage;
 
-require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
+
+$a = new Arbre();
+$a 
+    ->setCri('JE S\'APPEL GROOT !!!')
+    ->crier()
+;
 
 // Attention : la classe Personnage est une classe abstraite, elle ne peut pas être 
 // PHP Fatal error:  Uncaught Error: Cannot instantiate abstract class App\Personnage\Personnage in /home/chemin/projects/php/app.php:17
